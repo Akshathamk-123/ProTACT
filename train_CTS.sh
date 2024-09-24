@@ -4,6 +4,6 @@ for seed in 12 22 32 42 52
 do
     for prompt in {1..8}
     do
-        python train_CTS.py --test_prompt_id ${prompt} --model_name ${model_name} --seed ${seed} --features_path 'data/hand_crafted_v5-fea12.csv'
+        python train_CTS.py --test_prompt_id ${prompt} --model_name ${model_name} --seed ${seed} --features_path 'data/hand_crafted_v3.csv'
     done
 done
