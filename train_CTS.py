@@ -5,7 +5,7 @@ import random
 import numpy as np
 import tensorflow as tf
 from configs.configs import Configs
-from models.CTS import build_CTS
+from models.CTS_baseline import build_CTS
 from utils.read_data import read_essays, read_pos_vocab
 from utils.general_utils import get_scaled_down_scores, pad_hierarchical_text_sequences, get_attribute_masks
 from evaluators.multitask_evaluator_all_attributes import Evaluator as AllAttEvaluator
