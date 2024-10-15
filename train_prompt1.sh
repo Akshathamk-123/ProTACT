@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-model_name='ProTACT_prompt_1'
+model_name='ProTACT'
 prompt=1
 for seed in 12 22 32 42 52
 do
