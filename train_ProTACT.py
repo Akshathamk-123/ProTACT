@@ -201,14 +201,14 @@ def main():
 
     evaluator.print_final_info()
 
-    # '''# show the loss as the graph
+    '''# show the loss as the graph
     fig, loss_graph = plt.subplots()
     loss_graph.plot(custom_hist.train_loss,'y',label='train loss')
     loss_graph.plot(custom_hist.val_loss,'r',label='val loss')
     loss_graph.set_xlabel('epoch')
     loss_graph.set_ylabel('loss')
     plt.savefig(str('images/protact/test_prompt_'+ str(test_prompt_id) + '_seed_' + str(seed) + '_loss.png'))
-    # '''
+    '''
     
     # Save the model after training
     model.save(f'trained_model/protact_model_prompt_{test_prompt_id}_seed_{seed}.h5')
