@@ -12,7 +12,7 @@ class Evaluator():
 
 
         # Initialize OpenAI Chat Model
-        self.llm = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key="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")
+        self.llm = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key="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")
 
     def evaluate(self, essay_prompt, essay):
         # Define the prompt template
