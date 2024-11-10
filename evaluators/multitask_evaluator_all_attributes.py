@@ -8,12 +8,11 @@ load_dotenv()
 class Evaluator():
     def __init__(self):
         # Load OpenAI API key from environment
-        self.generate = os.getenv("OPENAI_API_KEY")
-        if self.generate is None:
-            raise ValueError("OpenAI API key not found. Please set it in the .env file.")
+        #self.generate = os.getenv("OPENAI_API_KEY")
+
 
         # Initialize OpenAI Chat Model
-        self.llm = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key=self.generate)
+        self.llm = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key="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")
 
     def evaluate(self, essay_prompt, essay):
         # Define the prompt template
