@@ -21,7 +21,7 @@ class EssayFeedbackGenerator:
         # Initialize the fine-tuned OpenAI model
         self.openai_llm = OpenAI(
             model_name="ft:gpt-3.5-turbo-1106:pes:finetune-feedback:AQwJEq7T:ckpt-step-800",
-            openai_api_key="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"
+            openai_api_key="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"
         )
 
         # Define the prompt template
