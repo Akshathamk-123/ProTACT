@@ -1,7 +1,7 @@
 import os
 import re
 from langchain import PromptTemplate, LLMChain
-from langchain.chat_models import OpenAI
+from langchain.chat_models import ChatOpenAI
 
 class Evaluator():
     def __init__(self):
@@ -11,7 +11,7 @@ class Evaluator():
             raise ValueError("OpenAI API key not found. Please set it in the .env file.")
 
         # Initialize OpenAI Chat Model
-        self.llm = OpenAI(model="gpt-3.5-turbo", openai_api_key=self.model)
+        self.llm = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key=self.model)
 
     def evaluate(self, essay_prompt, essay):
         # Define the prompt template
