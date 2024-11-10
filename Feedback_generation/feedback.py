@@ -15,14 +15,13 @@ load_dotenv()
 class EssayFeedbackGenerator:
     def __init__(self):
         # Load OpenAI API key from environment and initialize the model
-        openai_api_key = os.getenv("OPENAI_API_KEY")
-        if openai_api_key is None:
-            raise ValueError("OpenAI API key not found. Please set it in the environment.")
+        #openai_api_key = os.getenv("OPENAI_API_KEY")
+        
 
         # Initialize the fine-tuned OpenAI model
         self.openai_llm = OpenAI(
             model_name="ft:gpt-3.5-turbo-1106:pes:finetune-feedback:AQwJEq7T:ckpt-step-800",
-            openai_api_key=openai_api_key
+            openai_api_key="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"
         )
 
         # Define the prompt template
