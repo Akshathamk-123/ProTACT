@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import os
 from langchain import PromptTemplate, LLMChain
-from langchain.chat_models import OpenAI
+#from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain, SequentialChain
