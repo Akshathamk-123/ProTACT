@@ -7,11 +7,7 @@ from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain, SequentialChain
 
-LANGCHAIN_TRACING_V2=True
-LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
-# LANGCHAIN_API_KEY="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"
-LANGCHAIN_API_KEY="langchain_api_key"
-LANGCHAIN_PROJECT="feedback_system"
+
 
 class EssayFeedbackGenerator:
     def __init__(self):
