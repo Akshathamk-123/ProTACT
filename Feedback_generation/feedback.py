@@ -6,7 +6,10 @@ from langchain import PromptTemplate, LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain, SequentialChain
+from dotenv import load_dotenv
 
+# Load environment variables from .env file if not already loaded
+load_dotenv()
 
 
 class EssayFeedbackGenerator:
